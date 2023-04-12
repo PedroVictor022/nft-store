@@ -8,7 +8,7 @@ export const Header = () => {
         <p>Ínicio</p>
         <p>NFT</p>
         <p>Colecionadores</p>
-        <p>Pergun</p>
+        <p>Perguntas</p>
       </Navbar>
     </ContainerHeader>
   )
@@ -24,4 +24,9 @@ const Navbar = styled.div`
   display: flex;
   align-items: center;
   gap: 1.3rem;
+
+  color: #fefefe;
+  p {
+    cursor: pointer;
+  }
 `;
