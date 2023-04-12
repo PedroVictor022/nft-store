@@ -18,12 +18,16 @@ const ContainerHeader = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  margin-bottom: 3rem;
 `;
 
 const Navbar = styled.div`
   display: flex;
   align-items: center;
   gap: 1.3rem;
+
+  margin-bottom: 0.7rem;
 
   color: #fefefe;
   p {

@@ -5,7 +5,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Inter', sans-serif;
   }
   body {
-    background: #222;
+    background: #030303;
     color: #fff;
   }
 `;
