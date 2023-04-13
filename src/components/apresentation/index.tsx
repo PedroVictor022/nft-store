@@ -77,15 +77,12 @@ const ContainerImage = styled.div`
   .content {
     max-width: 400px;
 
-    background: rgba(255, 255, 255, 0.07);
+    /* background: rgba(255, 255, 255, 0.07); */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(12.2px);
     -webkit-backdrop-filter: blur(12.2px);
 
-    border-width: 1px;
-    border-style: solid;
-    border-image: linear-gradient(to right, orange, #ff9100) 4;
-
+    
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -98,14 +95,15 @@ const ContainerImage = styled.div`
     margin-left: 3px;
     color: #111; 
     background: #00000017; 
-    box-shadow: 0 0 60px #09ab5a;
+    
   }
 
   .info-menu {
+    box-shadow: 0 0 60px #6303e958;
     width: 100%;
 
     background: rgba(42, 42, 42, 0.07);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
     backdrop-filter: blur(12.2px);
     -webkit-backdrop-filter: blur(12.2px);
     border: 1px solid rgba(56, 56, 56, 0.3);
