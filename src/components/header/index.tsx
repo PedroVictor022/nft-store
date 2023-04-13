@@ -20,6 +20,10 @@ const ContainerHeader = styled.div`
   justify-content: space-between;
 
   margin-bottom: 3rem;
+
+  @media (max-width: 800px) {
+    justify-content: center;
+  }
 `;
 
 const Navbar = styled.div`
@@ -32,5 +36,9 @@ const Navbar = styled.div`
   color: #fefefe;
   p {
     cursor: pointer;
+  }
+
+  @media (max-width: 800px) {   
+    display: none;
   }
 `;
