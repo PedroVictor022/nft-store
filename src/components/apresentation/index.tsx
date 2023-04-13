@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Button } from "../utils/button";
 
 import nft from "../../assets/nft.png";
+import eth from "../../assets/eth.png";
 
 export const FirstSection = () => {
   return (
@@ -19,7 +20,22 @@ export const FirstSection = () => {
         <Button widthButton={"200px"}>EXPLORAR</Button>
       </ContainerInfo>
       <ContainerImage>
-        <img src={nft} alt="Imagem da NFT" />
+        <div className="content">
+          <img src={nft} className="nft" alt="Imagem da NFT" />
+          <div className="info-menu">
+            <div className="infos">
+              <div className="tags">
+                <h3 className="nft-title">Captain Jack</h3>
+                <span className="creator">By Allan Nore</span>
+              </div>
+              <div className="price">
+                <img src={eth} alt="Coin icon" />
+                <span>18 ETH</span>
+              </div>
+            </div>
+            <Button>COMPRAR</Button>
+          </div>
+        </div>
       </ContainerImage>
     </Container>
   );
@@ -29,6 +45,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10%;
 
   @media (max-width: 800px) {
     justify-content: center;
@@ -56,12 +73,98 @@ const ContainerInfo = styled.div`
 `;
 const ContainerImage = styled.div`
   width: 50%;
-  background-color: red;
+
+  .content {
+    max-width: 400px;
+
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.2px);
+    -webkit-backdrop-filter: blur(12.2px);
+
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(to right, orange, #ff9100) 4;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3px;
+    color: #111; 
+    background: #00000017; 
+    box-shadow: 0 0 60px #09ab5a;
+  }
+
+  .info-menu {
+    width: 100%;
+
+    background: rgba(42, 42, 42, 0.07);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.2px);
+    -webkit-backdrop-filter: blur(12.2px);
+    border: 1px solid rgba(56, 56, 56, 0.3);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .infos {
+      margin-left: 20px;
+    }
+
+    .price {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      span {
+        margin-bottom: 23px;
+      }
+    }
+
+    button {
+      margin-right: 20px;
+    }
+  }
 
   @media (max-width: 1150px) {
-    width: 35%;
-    img {
-      width: 310px;
+    width: 40%;
+    .content {
+      max-width: 300px;
+    }
+    .info-menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .infos {
+        margin-left: 0;
+
+        .tags {
+          display: flex;
+          align-items: center;
+          gap: 2rem;
+          font-size: 14px;
+        }
+        .price {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      button {
+        margin-right: 0;
+        margin-bottom: 22px;
+      }
+    }
+    .nft {
+      width: 290px;
     }
   }
 
