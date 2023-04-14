@@ -5,6 +5,7 @@ import { ContainerApp } from './styles/global'
 import { FirstSection } from './components/apresentation'
 import Stats from './components/stats'
 import TopsNFT from './components/tops'
+import Colections from './components/colections'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <FirstSection />
       <Stats />
       <TopsNFT />
+      <Colections />
     </ContainerApp>
   )
 }

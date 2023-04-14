@@ -36,10 +36,15 @@ const Container = styled.div`
   margin-top: 5rem;
 
   .content {
+    width: 100%;
     display: flex;
-    gap: 4rem;
+    justify-content: space-between;
+    align-items: center;
+    
 
     @media (max-width: 800px) {
+      width: 70%;
+      gap: 4rem;
       display: grid;
       padding: 0.2rem;
       grid-template-columns: 1fr 1fr;
@@ -60,9 +65,6 @@ const Box = styled.div`
     span {
       font-size: 20px;
     }
-  }
-  @media (max-width: 800px) {
-    border-bottom: 2px solid orange;
   }
 `;
 
