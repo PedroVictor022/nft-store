@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { ContainerApp } from './styles/global'
 import { FirstSection } from './components/apresentation'
 import Stats from './components/stats'
+import TopsNFT from './components/tops'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <FirstSection />
       <Stats />
+      <TopsNFT />
     </ContainerApp>
   )
 }

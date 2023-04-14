@@ -1,6 +1,9 @@
 import styled from "styled-components";
+import "swiper/css";
+import Slider from "../slider";
+import { SwiperSlide } from "swiper/react";
 
-export const Stats = () => { 
+export const Stats = () => {
   return (
     <Container>
       <div className="content">
@@ -21,11 +24,10 @@ export const Stats = () => {
           <span>VISUALIZAÇÕES</span>
         </Box>
       </div>
-
       {/* Carousel */}
     </Container>
-  )
-}
+  );
+};
 
 const Container = styled.div`
   display: flex;
@@ -36,6 +38,12 @@ const Container = styled.div`
   .content {
     display: flex;
     gap: 4rem;
+
+    @media (max-width: 800px) {
+      display: grid;
+      padding: 0.2rem;
+      grid-template-columns: 1fr 1fr;
+    }
   }
 `;
 
@@ -44,12 +52,21 @@ const Box = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  border-bottom: 0px solid;
   span {
     font-size: 30px;
   }
-`
+  @media (max-width: 1150px) {
+    span {
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 800px) {
+    border-bottom: 2px solid orange;
+  }
+`;
 
-const SpecialText = styled.span`
+export const SpecialText = styled.span`
   background: -webkit-linear-gradient(45deg, orange, yellow);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
