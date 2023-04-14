@@ -27,18 +27,31 @@ const Container = styled.div`
 `;
 
 const NFTContainer = styled.div`
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 2rem;
-  margin-top: 3.5rem;
+  margin-top:5rem;
   img {
-    width: 270px;
+    width: 400px;
+  }
+
+  @media (max-width:1550px) {
+    img {
+      width: 310px;
+    }
+  }
+
+  @media (max-width:1310px) {
+    img {
+      width: 230px;
+    }
   }
 
   @media (max-width:1150px) {
     img {
-      width: 200px;
+      width: 180px;
     }
   }
   @media (max-width:800px) {
