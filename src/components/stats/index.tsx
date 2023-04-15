@@ -43,11 +43,13 @@ const Container = styled.div`
     
 
     @media (max-width: 800px) {
-      width: 70%;
+      width: 100%;
       gap: 4rem;
       display: grid;
-      padding: 0.2rem;
       grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 420px) {
+      grid-template-columns: 1fr;
     }
   }
 `;
@@ -64,6 +66,11 @@ const Box = styled.div`
   @media (max-width: 1150px) {
     span {
       font-size: 20px;
+    }
+  }
+  @media (max-width: 800px) {
+    span {
+      font-size: 16px;
     }
   }
 `;

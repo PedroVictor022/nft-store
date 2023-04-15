@@ -174,7 +174,7 @@ const ContainerImage = styled.div`
     display: none;
   }
 `;
-const SpecialText = styled.span`
+export const SpecialText = styled.span`
   background: -webkit-linear-gradient(45deg, orange, yellow);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
