@@ -118,6 +118,7 @@ const ContainerImage = styled.div`
 
     .infos {
       margin-left: 20px;
+      padding-top: 1rem;
     }
 
     .price {
